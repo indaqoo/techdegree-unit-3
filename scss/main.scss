@@ -105,6 +105,10 @@ select {
         border-color: $color-5;
         color: $color-5;
         background: #fff;
+
+        &::placeholder {
+            color: $color-5;
+        }
     }
 
     &::placeholder {
