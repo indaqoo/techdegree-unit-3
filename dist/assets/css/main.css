@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Merriweather', serif;
+  background: #fff; }
+
+.container {
+  width: 95%;
+  margin: 0 auto; }
+
+.wrap {
+  padding: 1rem; }
+
+header {
+  background: #24292e;
+  padding: 20px; }
+  header h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem; }
+
+.page-desc {
+  text-align: center;
+  margin-bottom: 2px;
+  border-bottom: 4px solid #333; }
+  .page-desc h2 {
+    color: #24292e;
+    font-size: 1.25rem;
+    padding: 20px 0 10px 0; }
+  .page-desc p {
+    color: #586069;
+    font-size: .875rem;
+    padding: 10px 0 20px 0; }
+
+.forms {
+  border-top: 2px solid #24292e; }
+
+.contact-info {
+  border-bottom: 2px solid #24292e;
+  padding-bottom: 20px; }
+
+fieldset {
+  border: 0; }
+  fieldset p {
+    padding: 20px 0;
+    color: #586069; }
+  fieldset legend {
+    color: #24292e;
+    font-size: 1.25rem;
+    padding: 20px 0;
+    font-weight: 700; }
+  fieldset label {
+    font-size: .875rem;
+    color: #586069; }
+
+.flex-item {
+  display: flex;
+  flex-direction: column; }
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="submit"],
+textarea,
+select {
+  font-size: .875rem;
+  color: #e1e4e8;
+  background-color: #f6f8fa;
+  padding: 15px 15px;
+  margin: 15px 0;
+  border-radius: 5px;
+  border: 1px solid #e1e4e8;
+  outline: none;
+  -webkit-transition: ease-in 0.5s;
+  transition: ease-in 0.5s; }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  input[type="submit"]:focus,
+  textarea:focus,
+  select:focus {
+    border-color: #586069;
+    color: #586069;
+    background: #fff; }
+  input[type="text"]::placeholder,
+  input[type="email"]::placeholder,
+  input[type="tel"]::placeholder,
+  input[type="submit"]::placeholder,
+  textarea::placeholder,
+  select::placeholder {
+    text-align: right;
+    font-style: italic;
+    padding-right: 2px;
+    color: #d3d3d3; }
+
+textarea {
+  resize: none; }
+
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"],
+input[type="checkbox"] + label,
+input[type="radio"] + label,
+select {
+  cursor: pointer;
+  color: #AAAFB4; }
+
+input[type="tel"]::placeholder {
+  text-align: left;
+  font-style: normal;
+  padding: 0; }
+
+input[type="submit"] {
+  color: #fff;
+  background-color: #2E96FF;
+  border-color: rgba(46, 150, 255, 0.8); }
+  input[type="submit"]:focus {
+    border-color: #004a94;
+    background-color: #0070e1;
+    color: #fff; }
+
+input[name="zip-code"] {
+  align-self: flex-start; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 5px; }
+
+.noclass input:checked + label {
+  color: #586069; }
+
+footer p {
+  text-align: center;
+  font-size: .875rem;
+  color: #b1b1b1;
+  font-style: italic;
+  margin: 20px; }
+
+@media (min-width: 768px) {
+  body {
+    background: #f6f8fa; }
+  .container {
+    width: 60%; }
+  .wrap {
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-top: none; }
+  .page-desc p {
+    color: #586069;
+    font-size: .875rem;
+    padding: 0px 0 40px 0; }
+  .flex-item {
+    flex-direction: row; }
+    .flex-item label {
+      align-self: center;
+      flex-basis: 30%; }
+    .flex-item input,
+    .flex-item select {
+      flex-grow: 1; }
+  input[name="zip-code"] {
+    flex-grow: 0; }
+  .flex-textarea {
+    display: flex;
+    flex-direction: column-reverse; }
+    .flex-textarea label {
+      margin: 20px 0;
+      flex-grow: 1; }
+    .flex-textarea textarea {
+      flex-grow: 1; } }

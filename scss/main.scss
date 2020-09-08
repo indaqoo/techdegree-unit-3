@@ -1,0 +1,235 @@
+@import 'colors';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background: #fff;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.wrap {
+    padding: 1rem;
+}
+
+header {
+
+    background: $color-menu;
+    padding: 20px;
+
+    h1 {
+        text-align: center;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+}
+
+.page-desc {
+    text-align: center;
+    margin-bottom: 2px;
+    border-bottom: 4px solid #333;
+    h2 {
+        color: $color-menu;
+        font-size: 1.25rem;
+        padding: 20px 0 10px 0;
+    }
+
+    p {
+        color: $color-link;
+        font-size: .875rem;
+        padding: 10px 0 20px 0;
+    }
+}
+
+.forms {
+    border-top: 2px solid $color-menu;
+}
+
+.contact-info {
+    border-bottom: 2px solid $color-menu;
+    padding-bottom: 20px;
+}
+
+fieldset {
+    border: 0;
+
+    p {
+        padding: 20px 0;
+        color: $color-link;
+    }
+
+    legend {
+        color: $color-menu;
+        font-size: 1.25rem;
+        padding: 20px 0;
+        font-weight: 700;
+    }
+    
+    label {
+        font-size: .875rem;
+        color: $color-link;
+    }
+}
+
+.flex-item {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="submit"],
+textarea,
+select {
+    font-size: .875rem;
+    color: $color-border;
+    background-color: $color-box;
+    padding: 15px 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    border: 1px solid $color-border;
+    outline: none;
+    -webkit-transition: ease-in 0.5s;
+    transition: ease-in 0.5s;
+
+    &:focus {
+        border-color: $color-link;
+        color: $color-link;
+        background: #fff;
+    }
+
+    &::placeholder {
+        text-align: right;
+        font-style: italic;
+        padding-right: 2px;
+        color: #d3d3d3;
+    }
+
+}
+
+textarea {
+    resize: none;  
+}
+
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"],
+input[type="checkbox"] + label,
+input[type="radio"] + label,
+select {
+    cursor: pointer;
+    color: #AAAFB4;
+}
+
+input[type="tel"] {
+    &::placeholder {
+        text-align: left;
+        font-style: normal;
+        padding: 0;
+    }
+}
+
+input[type="submit"] {
+    color: #fff;
+    background-color: $color-blue;
+    border-color: rgba($color: $color-blue, $alpha: .8);
+
+    &:focus {
+        border-color: darken( $color-blue, 30%);
+        background-color: darken($color-blue, 15%);
+        color: #fff;
+    }
+}
+
+input[name="zip-code"] {
+    align-self: flex-start;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 5px;
+
+}
+
+.noclass {
+    input:checked + label {
+        color: $color-link;
+    }
+}
+
+footer {
+    p {
+        text-align: center;
+        font-size: .875rem;
+        color: #b1b1b1;
+        font-style: italic;
+        margin: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    body {
+        background: $color-box;
+    }
+
+    .container {
+        width: 60%;
+    }
+
+    .wrap {
+        background: $color-background;
+        border: 1px solid $color-border;
+        border-top: none;
+    }
+
+    .page-desc p {
+        color: #586069;
+        font-size: .875rem;
+        padding: 0px 0 40px 0;
+    }
+    
+
+    .flex-item {
+        flex-direction: row;
+
+        label {
+            align-self: center;
+            flex-basis: 30%;
+        }
+
+        input,
+        select {
+            flex-grow: 1;
+        }
+    }
+
+    input[name="zip-code"] {
+        flex-grow: 0;
+    }
+    
+
+    .flex-textarea {
+        display: flex;
+        flex-direction: column-reverse;
+
+        label {
+            margin: 20px 0;
+            flex-grow: 1;
+        }
+
+        textarea{
+            flex-grow: 1;
+        }
+
+    }
+}
