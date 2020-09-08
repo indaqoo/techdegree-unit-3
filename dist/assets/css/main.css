@@ -130,7 +130,7 @@ input[type="submit"] {
     color: #fff; }
 
 input[name="zip-code"] {
-  align-self: flex-start; }
+  width: 40%; }
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -176,6 +176,7 @@ footer p {
     .flex-item select {
       flex-grow: 1; }
   input[name="zip-code"] {
-    flex-grow: 0; }
+    flex-grow: 0;
+    width: 20%; }
   .flex-textarea {
     flex-direction: column; } }
