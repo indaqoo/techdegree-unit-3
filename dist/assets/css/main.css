@@ -171,5 +171,4 @@ footer p {
   input[name="zip-code"] {
     flex-grow: 0; }
   .flex-textarea {
-    display: flex;
     flex-direction: column; } }
