@@ -139,6 +139,14 @@ footer p {
   font-style: italic;
   margin: 20px; }
 
+.flex-textarea {
+  display: flex;
+  flex-direction: column; }
+  .flex-textarea label {
+    margin: 20px 0; }
+  .flex-textarea textarea {
+    flex-grow: 1; }
+
 @media (min-width: 768px) {
   body {
     background: #f6f8fa; }
@@ -164,9 +172,4 @@ footer p {
     flex-grow: 0; }
   .flex-textarea {
     display: flex;
-    flex-direction: column-reverse; }
-    .flex-textarea label {
-      margin: 20px 0;
-      flex-grow: 1; }
-    .flex-textarea textarea {
-      flex-grow: 1; } }
+    flex-direction: column; } }
