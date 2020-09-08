@@ -176,6 +176,19 @@ footer {
     }
 }
 
+.flex-textarea {
+    display: flex;
+    flex-direction: column;
+    label {
+        margin: 20px 0;
+    }
+    textarea{
+        flex-grow: 1;
+    }
+
+}
+
+
 @media (min-width: 768px) {
 
     body {
@@ -216,20 +229,10 @@ footer {
     input[name="zip-code"] {
         flex-grow: 0;
     }
-    
 
     .flex-textarea {
         display: flex;
-        flex-direction: column-reverse;
-
-        label {
-            margin: 20px 0;
-            flex-grow: 1;
-        }
-
-        textarea{
-            flex-grow: 1;
-        }
-
+        flex-direction: column;
+    
     }
 }
