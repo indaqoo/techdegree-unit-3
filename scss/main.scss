@@ -22,7 +22,7 @@ body {
 
 header {
 
-    background: $color-menu;
+    background: $color-4;
     padding: 20px;
 
     h1 {
@@ -37,24 +37,24 @@ header {
     margin-bottom: 2px;
     border-bottom: 4px solid #333;
     h2 {
-        color: $color-menu;
+        color: $color-4;
         font-size: 1.25rem;
         padding: 20px 0 10px 0;
     }
 
     p {
-        color: $color-link;
+        color: $color-5;
         font-size: .875rem;
         padding: 10px 0 20px 0;
     }
 }
 
 .forms {
-    border-top: 2px solid $color-menu;
+    border-top: 2px solid $color-4;
 }
 
 .contact-info {
-    border-bottom: 2px solid $color-menu;
+    border-bottom: 2px solid $color-4;
     padding-bottom: 20px;
 }
 
@@ -63,11 +63,11 @@ fieldset {
 
     p {
         padding: 20px 0;
-        color: $color-link;
+        color: $color-5;
     }
 
     legend {
-        color: $color-menu;
+        color: $color-4;
         font-size: 1.25rem;
         padding: 20px 0;
         font-weight: 700;
@@ -75,7 +75,7 @@ fieldset {
     
     label {
         font-size: .875rem;
-        color: $color-link;
+        color: $color-5;
     }
 }
 
@@ -91,19 +91,19 @@ input[type="submit"],
 textarea,
 select {
     font-size: .875rem;
-    color: $color-border;
-    background-color: $color-box;
+    color: $color-3;
+    background-color: $color-2;
     padding: 15px 15px;
     margin: 15px 0;
     border-radius: 5px;
-    border: 1px solid $color-border;
+    border: 1px solid $color-3;
     outline: none;
     -webkit-transition: ease-in 0.5s;
     transition: ease-in 0.5s;
 
     &:focus {
-        border-color: $color-link;
-        color: $color-link;
+        border-color: $color-5;
+        color: $color-5;
         background: #fff;
     }
 
@@ -140,12 +140,12 @@ input[type="tel"] {
 
 input[type="submit"] {
     color: #fff;
-    background-color: $color-blue;
-    border-color: rgba($color: $color-blue, $alpha: .8);
+    background-color: $color-6;
+    border-color: rgba($color: $color-6, $alpha: .8);
 
     &:focus {
-        border-color: darken( $color-blue, 30%);
-        background-color: darken($color-blue, 15%);
+        border-color: darken( $color-6, 30%);
+        background-color: darken($color-6, 15%);
         color: #fff;
     }
 }
@@ -162,7 +162,7 @@ input[type="radio"] {
 
 .noclass {
     input:checked + label {
-        color: $color-link;
+        color: $color-5;
     }
 }
 
@@ -192,7 +192,7 @@ footer {
 @media (min-width: 768px) {
 
     body {
-        background: $color-box;
+        background: $color-2;
     }
 
     .container {
@@ -200,8 +200,8 @@ footer {
     }
 
     .wrap {
-        background: $color-background;
-        border: 1px solid $color-border;
+        background: $color-1;
+        border: 1px solid $color-3;
         border-top: none;
     }
 
