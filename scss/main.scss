@@ -98,8 +98,8 @@ select {
     border-radius: 5px;
     border: 1px solid $color-3;
     outline: none;
-    -webkit-transition: ease-in 0.5s;
-    transition: ease-in 0.5s;
+    transition-property: background;
+    transition: .5s ease-in-out .4s;
 
     &:focus {
         border-color: $color-5;

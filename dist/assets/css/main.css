@@ -74,8 +74,8 @@ select {
   border-radius: 5px;
   border: 1px solid #e1e4e8;
   outline: none;
-  -webkit-transition: ease-in 0.5s;
-  transition: ease-in 0.5s; }
+  transition-property: background;
+  transition: .5s ease-in-out .4s; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="tel"]:focus,
