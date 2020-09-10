@@ -1,7 +1,7 @@
 {
   "name": "an-online-registration-form",
   "version": "1.0.0",
-  "description": "a responsive, mobile-friendly registration form using a wide variety of HTML form input types and attributes",
+  "description": "A responsive, mobile-friendly registration form using a wide variety of HTML form input types and attributes",
   "main": "index.js",
   "homepage": "https://indaqoo.github.io/techdegree-unit-3",
   "dependencies": {
@@ -11,9 +11,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "sass": "node-sass -w scss -o dist/assets/css --recursive",
+    "sass": "node-sass -w scss -o dist/assets/css -r",
     "deploy": "gh-pages -d dist"
   },
-  "author": "Roberts Peirags",
+  "author": "Roberts Peirāgs",
   "license": "MIT"
 }
