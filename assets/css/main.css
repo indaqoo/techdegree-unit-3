@@ -50,7 +50,7 @@ fieldset {
   fieldset legend {
     color: #24292e;
     font-size: 1.25rem;
-    padding: 20px 0;
+    padding: 40px 0 20px 0;
     font-weight: 700; }
   fieldset label {
     font-size: .875rem;
@@ -74,8 +74,8 @@ select {
   border-radius: 5px;
   border: 1px solid #e1e4e8;
   outline: none;
-  -webkit-transition: ease-in 0.5s;
-  transition: ease-in 0.5s; }
+  transition-property: background;
+  transition: .5s ease-in-out; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="tel"]:focus,
@@ -85,6 +85,13 @@ select {
     border-color: #586069;
     color: #586069;
     background: #fff; }
+    input[type="text"]:focus::placeholder,
+    input[type="email"]:focus::placeholder,
+    input[type="tel"]:focus::placeholder,
+    input[type="submit"]:focus::placeholder,
+    textarea:focus::placeholder,
+    select:focus::placeholder {
+      color: #586069; }
   input[type="text"]::placeholder,
   input[type="email"]::placeholder,
   input[type="tel"]::placeholder,
@@ -123,7 +130,7 @@ input[type="submit"] {
     color: #fff; }
 
 input[name="zip-code"] {
-  align-self: flex-start; }
+  width: 40%; }
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -169,7 +176,5 @@ footer p {
     .flex-item select {
       flex-grow: 1; }
   input[name="zip-code"] {
-    flex-grow: 0; }
-  .flex-textarea {
-    display: flex;
-    flex-direction: column; } }
+    flex-grow: 0;
+    width: 20%; } }
